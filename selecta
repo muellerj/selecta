@@ -437,6 +437,7 @@ class Score
     end.to_set
 
     def score(string, query_chars)
+      query_chars -= [" "] # Change by Jonas Müller
       first_char, *rest = query_chars
 
       # Keep track of the best match that we've seen. This is uglier than
