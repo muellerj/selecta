@@ -48,6 +48,9 @@ class Selecta
         run_in_screen(config, screen, tty)
       ensure
         config.visible_choices.times { screen.newline }
+        screen.cursor_up(config.height - 1)
+        screen.write(Text[""])
+        screen.cursor_up(1)
       end
     end
 
