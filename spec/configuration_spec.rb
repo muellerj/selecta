@@ -1,7 +1,7 @@
 require "base64"
 require_relative "spec_helper"
 
-describe Configuration do
+RSpec.describe Configuration do
   describe "choices" do
     it "removes leading and trailing whitespace" do
       config = Configuration.from_inputs([" a choice "],

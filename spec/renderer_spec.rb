@@ -1,6 +1,6 @@
 require_relative "spec_helper"
 
-describe Renderer do
+RSpec.describe Renderer do
   let(:config) { Configuration.from_inputs(["one", "two", "three"],
                                            Configuration.default_options,
                                            3) }

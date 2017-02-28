@@ -1,6 +1,6 @@
 require_relative "spec_helper"
 
-describe Search do
+RSpec.describe Search do
   let(:config) { Configuration.from_inputs(["one", "two", "three"],
                                            Configuration.default_options) }
   let(:search) { Search.from_config(config) }
